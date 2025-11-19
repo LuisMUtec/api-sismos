@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Selenium
+*.log
+geckodriver.log
+chromedriver.log
+
+# Datos generados
+sismos_igp_*.json
+
+# AWS
+.serverless/
+node_modules/
+
+# Sistema
+.DS_Store
+Thumbs.db
