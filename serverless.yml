@@ -1,6 +1,14 @@
 org: luismutec
 service: api-sismos-igp-scraping
 
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    layer: true
+
 provider:
   name: aws
   runtime: python3.13
@@ -12,7 +20,7 @@ provider:
 
 functions:
   scrape_sismos_igp:
-    handler: scrap_sismos_igp.lambda_handler
+    handler: lambda_sismos.lambda_handler
     package:
       include:
         - ./**  # Incluir todo el contenido del directorio
